@@ -1,0 +1,241 @@
+\documentclass[12pt, a4paper]{article}
+
+% ─── Paquetes ────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{tikz}
+\usepackage{mdframed}
+
+% ─── Geometría ───────────────────────────────────────────────────────────────
+\geometry{
+  top=3cm, bottom=3cm,
+  left=3.5cm, right=3.5cm,
+  headheight=15pt
+}
+
+% ─── Colores ─────────────────────────────────────────────────────────────────
+\definecolor{azulUR}{RGB}{0, 60, 120}
+\definecolor{dorado}{RGB}{180, 140, 50}
+\definecolor{grisclaro}{RGB}{245, 245, 245}
+
+% ─── Interlineado ────────────────────────────────────────────────────────────
+\setstretch{1.45}
+\setlength{\parskip}{0.8em}
+
+% ─── Hyperref ────────────────────────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  linkcolor=azulUR,
+  urlcolor=azulUR,
+  hidelinks
+}
+
+% ─── Encabezado y pie de página ──────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[C]{\small\color{azulUR}\textit{Discurso de Graduación · Ingeniería Informática · UR}}
+\fancyfoot[C]{\small\color{gray}\thepage}
+
+% ─── Estilo sección decorativa ───────────────────────────────────────────────
+\newcommand{\separador}{%
+  \begin{center}
+    \textcolor{dorado}{\rule{2cm}{0.4pt}\quad\(\star\)\quad\rule{2cm}{0.4pt}}
+  \end{center}
+  \vspace{0.3em}
+}
+
+% ─── Entorno para citas destacadas ───────────────────────────────────────────
+\newmdenv[
+  backgroundcolor=grisclaro,
+  linecolor=dorado,
+  linewidth=2pt,
+  topline=false,
+  rightline=false,
+  bottomline=false,
+  innerleftmargin=14pt,
+  innerrightmargin=10pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  skipabove=1em,
+  skipbelow=1em
+]{citadestacada}
+
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{document}
+
+% ─── Portada ─────────────────────────────────────────────────────────────────
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+
+  {\color{azulUR}\rule{\linewidth}{1.2pt}}\\[0.4em]
+  {\color{dorado}\rule{\linewidth}{0.4pt}}
+
+  \vspace{1.8cm}
+
+  {\fontsize{28}{34}\selectfont\bfseries\color{azulUR}
+    De lo que más importa:\\[0.2em]
+    personas, tiempo y responsabilidad
+  }
+
+  \vspace{1cm}
+
+  {\color{dorado}\rule{6cm}{0.4pt}}
+
+  \vspace{1cm}
+
+  {\Large\itshape Discurso de Graduación}
+
+  \vspace{0.5cm}
+
+  {\large Ingeniería Informática · Universidad de La Rioja}
+
+  \vspace{2.5cm}
+
+  {\Large Pablo Galilea Valverde}
+
+  \vspace{0.5cm}
+
+  {\large Curso 2024--2025}
+
+  \vfill
+
+  {\color{dorado}\rule{\linewidth}{0.4pt}}\\[0.3em]
+  {\color{azulUR}\rule{\linewidth}{1.2pt}}
+\end{titlepage}
+
+% ─── Cuerpo del discurso ─────────────────────────────────────────────────────
+\thispagestyle{fancy}
+
+\vspace*{0.5cm}
+{\large Buenos días a todos.}
+
+Me llamo Pablo Galilea, soy estudiante de Ingeniería Informática en la UR, y lo primero que quiero hacer es dar las gracias.
+Gracias a las familias que están aquí, gracias al cuerpo docente, y gracias a cada uno de mis compañeros, porque sin vosotros este discurso no tendría ningún sentido.
+Y cuando digo «sin vosotros» no lo digo como fórmula de cortesía; lo digo porque lo que más me importa de estos años no está en ningún expediente académico.
+
+Hoy quiero hablaros de tres cosas: \textbf{de las personas, del tiempo, y de la responsabilidad}.
+Y espero que cuando salgáis de aquí, algo de lo que diga os acompañe, aunque sea un ratito.
+
+\separador
+
+\textbf{\large\color{azulUR} Las personas}
+
+\medskip
+
+Empiezo por lo más importante.
+
+Cuando entramos en la carrera, muchos llegamos sin saber muy bien qué nos esperaba.
+Algunos veníamos con miedo, otros con demasiada confianza, y casi todos con la misma pregunta sin formular: \textit{¿seré capaz?}
+
+Y la respuesta, casi siempre, no la encontramos en los libros.
+La encontramos en el compañero que se quedó con nosotros a las dos de la mañana depurando un error que llevaba horas sin aparecer.
+En la persona que te mandó un mensaje justo cuando creías que no podías más.
+En el grupo que convirtió una biblioteca en algo parecido a un hogar.
+En la familia que nos ha apoyado desde el principio, aunque no entendiera muy bien qué era eso de las matrices, la quimica organica o las integrales, pero que nos ha brindado su cariño y su apoyo incondicional. Demostrando que como el amor de la familia no hay nada.
+
+
+Las amistades que se forjan en carreras como las nuestras son de una naturaleza especial.
+Compartís presión, frustración, fracaso y victoria en proporciones iguales.
+Eso une de una manera que es difícil de explicar a quien no lo ha vivido.
+
+
+Estas personas han sido vuestro rayo de luz en muchos momentos en los que creíais que no podéis seguir adelante.
+Cuidadlas. Mantenedlas. Porque lo que habéis construido aquí dentro vale muchísimo más de lo que imagináis ahora mismo.
+
+\medskip
+
+Quiero hablar también de nuestros profesores, porque esta etapa ha sido diferente a todo lo anterior.
+
+Por primera vez en nuestra vida académica hemos llegado a la universidad siendo adultos.
+Y eso cambia la relación.
+Muchas veces hemos hablado con ellos casi como colegas, hemos debatido, hemos discrepado, nos hemos tomado un café.
+Y eso está bien. Es parte de crecer.
+Pero precisamente por eso quiero recordar algo: que la cercanía no quita el respeto.
+Que detrás de cada profesor hay años de estudio, de experiencia y de dedicación que merecen reconocimiento.
+Han sido nuestros guías en un terreno que, cuando llegamos, no conocíamos en absoluto.
+Así que, gracias. De verdad.
+
+\separador
+
+\textbf{\large\color{azulUR} El tiempo}
+
+\medskip
+
+Y ahora llegamos al corazón de lo que quiero deciros.
+
+Ahora mismo, en este momento, sois jóvenes. Sois sanos. Y sois potencialmente felices. Los tres a la vez.
+¿Sabéis lo raro que es eso? ¿Lo privilegiado que es?
+
+Durante la carrera hemos ido siempre con prisas.
+Queremos terminar el semestre para llegar al siguiente, terminar el año para llegar al siguiente, terminar la carrera para empezar a trabajar, empezar a trabajar para... ¿qué? ¿Para seguir corriendo?
+Hay algo muy triste en vivir la vida como un pasillo que hay que cruzar lo más rápido posible.
+
+
+Disfruta de tu vida. Haz lo que te gusta. Por supuesto que hay que formarse, hay que trabajar, hay que ser responsable. Pero hay tiempo para todo. Lo que no puede ser es que tu vida sea una carrera en la que solo enciendas el cerebro en pequeños descansos. Haz que esos descansos sean la mayor parte del día.
+
+Pasa tiempo con tu familia. Pasa tiempo con tus amigos. Permite que te pasen cosas.
+
+Porque cuando hayas visto la vida pasar, no te vas a acordar del número de integrales que has resuelto.
+Ni del número de líneas de código que has picado.
+Te acordarás de los momentos que has vivido con las personas que quieres.
+
+El éxito no es una nota. No es un sueldo.
+El éxito es saber disfrutar de los pequeños momentos.
+Es irse a dormir con la sensación de haber \textit{vivido} el día, no de haberlo sobrevivido.
+
+Sé consciente de lo privilegiado que eres.
+No te lo digo como un reproche. Te lo digo como un recordatorio.
+Porque esta vida hay que disfrutarla, y nadie lo va a hacer por ti.
+
+\separador
+
+\textbf{\large\color{azulUR} La responsabilidad}
+
+\medskip
+
+Pero no me quería ir sin decir una cosa más.
+
+Además de disfrutar, hay que ser buenos.
+
+Vosotros sois las mentes del futuro. No solo de esta universidad, sino del mundo.
+Y el mundo, ahora mismo, necesita urgentemente mentes buenas.
+Necesita gente que se indigna cuando algo es injusto.
+Gente que no mira para otro lado.
+Gente que pone su grano de arena aunque sienta que es pequeño, porque si todos lo hacemos, ese montón acaba siendo enorme.
+
+No podemos seguir normalizando que quienes tienen el poder para cambiar el mundo lo usen para destruirlo.
+La capacidad de poder cambiarlo está en las decisiones que tomamos cada día: en cómo votamos, cómo consumimos, cómo hablamos y cómo tratamos a los demás.
+
+No podemos permitir que la tecnología que hemos aprendido a dominar se use para espiar, para manipular, para controlar, para dividir. Una persona tan despreciable como Donald Trump no deberia poder ser el presidente de una potencia mundial, ese tipo de personas deberían estar en la cárcel y no en el despacho Oval.
+
+Todo mi apoyo y mi cariño para las víctimas de Palestina, de Irán, y de todos los conflictos que no aparecen en los titulares.
+Porque el hecho de que no se hable de ellos no significa que no existan.
+
+\vspace{1.5em}
+\separador
+\vspace{0.5em}
+
+Si con estas palabras consigo que uno solo de vosotros salga de aquí pensando un poco más en cómo quiere vivir y en qué mundo quiere dejar, me doy por satisfecho.
+
+\vspace{1em}
+
+{\large\bfseries Enhorabuena a todos. Ha sido un honor compartir este camino con vosotros.}
+
+\end{document}
